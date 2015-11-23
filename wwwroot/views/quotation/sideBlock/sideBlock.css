@@ -1,0 +1,19 @@
+.side-blocks {
+  overflow: auto; }
+  .side-blocks .side-block {
+    border: 1px solid #AFAFAF;
+    height: 50px;
+    background-color: #F0F0F0;
+    padding: 2px; }
+    .side-blocks .side-block .block-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+  .side-blocks .color_active {
+    background-color: #F47121;
+    color: white; }
+  .side-blocks .color_inactive {
+    background-color: #FFFFFF;
+    color: #001932; }
+
+/*# sourceMappingURL=sideBlock.css.map */

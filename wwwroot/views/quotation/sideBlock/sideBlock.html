@@ -1,0 +1,11 @@
+<div class="side-block" ng-click="vm.onClick()">
+    <div class="block-content" style="height:45px;"
+         ng-class="{color_active: vm.sideBlock,color_inactive:!vm.sideBlock}">
+        <div style="width:100%;margin:0 auto;">
+            <div style="text-align: center; font-size: 18px;">
+                <i class="{{vm.iconClass}}"></i>
+            </div>
+            <div style="text-align: center;  font-size: 10px;" ng-class="{}">{{vm.label}}</div>
+        </div>
+    </div>
+</div>

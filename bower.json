@@ -1,0 +1,15 @@
+{
+  "name": "ASP.NET",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.0.0",
+    "hammer.js": "2.0.4",
+    "jquery": "2.1.4",
+    "jquery-validation": "1.11.1",
+    "jquery-validation-unobtrusive": "3.2.2",
+    "ng-file-upload": "*",
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}

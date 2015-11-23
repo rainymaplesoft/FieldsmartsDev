@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "approot/views/_layout/layout.css",
+    "inputFile": "approot/views/_layout/layout.scss"
+  },
+  {
+    "outputFile": "wwwroot/views/_layout/layout.css",
+    "inputFile": "wwwroot/views/_layout/layout.scss"
+  }
+]

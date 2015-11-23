@@ -1,0 +1,243 @@
+$gray-bg: #f3f3f3;
+$font-color: #d1d1d1;
+$menu-background-color: #242424;
+$menu-active-background-color: #0d502a;
+$title-bar-height: 6vh;
+$view-height: 94vh;
+$body-background-color: #F2F2F2;
+$menu-bar-height: 25px;
+$orange: #F47121;
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+input:active, a:active,
+input:focus, a:focus {
+  outline: none;
+  -moz-outline-style: none;
+  outline-style: none;
+}
+
+/*div.fancy-in {
+  background: url('../../images/bg-Aero-Abstract-Blue1_1200h.jpg') no-repeat center fixed;
+}*/
+
+html {
+  height: 100%;
+}
+
+body.container-fluid {
+  padding: 0;
+  background-color: $body-background-color;
+}
+
+/* general */
+.blue-icon {
+  color: #0072BC;
+}
+
+.div-center {
+  margin: 0 auto;
+}
+
+.v-center-container{
+/*vertically center its child*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.form-control {
+  border-radius: 0;
+  height: 27px;
+}
+
+/* layout */
+.layout {
+  min-height: 100vh;
+
+  background-color: $body-background-color;
+
+  .layout-panel {
+    padding: 0 !important;
+    height: 100vh;
+    .layout-body {
+      max-width: 600px;
+      background-color: #F2F2F2;
+      margin: 0 auto;
+      height: 100%;
+
+      .main-view {
+        padding: 0;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+/* quotation */
+
+.quotation {
+  position: relative;
+  height: 100%;
+  .section {
+    width: 100%;
+  }
+  .right-border {
+    border-right: 1px solid #001932;
+  }
+  .header {
+    background-color: #003A61;
+    color: #E2E5E9;
+    .head-bar {
+      border-bottom: 1px solid #001932;
+      height: 54px;
+      > div {
+        height: 100%;
+        color: #E2E5E9;
+      }
+      .nav-arrow {
+        font-size: 41px;
+        width: 54px;
+      }
+      .quot-num {
+        font-size: 19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .calendar {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .calendar-content {
+          margin: 0 auto;
+
+        }
+        .calendar-icon {
+          font-size: 16px;
+        }
+        .date-1 {
+          font-size: 16px;
+        }
+        .date-2 {
+          font-size: 11px;
+        }
+      }
+    }
+    .header-input {
+      background-color: #003A61;
+      overflow: auto;
+      padding-top: 5px;
+      label {
+        font-size: 9px;
+      }
+      .q-info {
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+    }
+    .header-check {
+      width: 100px;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 8px;
+      .job-text {
+        text-align: center;
+        font-size: 9px;
+      }
+    }
+  }
+
+  .menu {
+    background-color: #FFFFFF;
+    color: #001932;
+    overflow: auto;
+    .menu-bar {
+      height: $menu-bar-height;
+      ul {
+        margin-top: 0;
+        list-style: none;
+        padding-left: 10px;
+        li {
+          float: left;
+          position: relative;
+          display: block;
+          line-height: $menu-bar-height - 1;
+          a {
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    overflow: auto;
+    .side-blocks {
+      overflow: auto;
+      .side-block {
+        border:1px solid #AFAFAF;
+        height:50px;
+        padding:2px;
+        .block-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+      }
+    }
+    .category {
+      overflow: auto;
+      .cat-blocks {
+        margin-bottom:3px;
+        overflow: auto;
+        .cat-block {
+          border:1px solid #CFCFCF;
+          background-color: #FFFFFF;
+          padding-left: 5px;
+          padding-right: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .footer {
+    background-color: #003A61;
+    color: #E2E5E9;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    .nav-next {
+      height: 50px;
+      > div {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .text-next {
+      font-size: 10px;
+    }
+    .text-siding {
+      font-size: 20px;
+    }
+    .nav-arrow {
+      font-size: 41px;
+      width: 54px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

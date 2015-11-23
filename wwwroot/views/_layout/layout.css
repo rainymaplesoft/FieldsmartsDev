@@ -1,0 +1,174 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
+input:active, a:active,
+input:focus, a:focus {
+  outline: none;
+  -moz-outline-style: none;
+  outline-style: none; }
+
+/*div.fancy-in {
+  background: url('../../images/bg-Aero-Abstract-Blue1_1200h.jpg') no-repeat center fixed;
+}*/
+html {
+  height: 100%; }
+
+body.container-fluid {
+  padding: 0;
+  background-color: #F2F2F2; }
+
+/* general */
+.blue-icon {
+  color: #0072BC; }
+
+.div-center {
+  margin: 0 auto; }
+
+.v-center-container {
+  /*vertically center its child*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.form-control {
+  border-radius: 0;
+  height: 27px; }
+
+/* layout */
+.layout {
+  min-height: 100vh;
+  background-color: #F2F2F2; }
+  .layout .layout-panel {
+    padding: 0 !important;
+    height: 100vh; }
+    .layout .layout-panel .layout-body {
+      max-width: 600px;
+      background-color: #F2F2F2;
+      margin: 0 auto;
+      height: 100%; }
+      .layout .layout-panel .layout-body .main-view {
+        padding: 0;
+        height: 100%; }
+
+/* quotation */
+.quotation {
+  position: relative;
+  height: 100%; }
+  .quotation .section {
+    width: 100%; }
+  .quotation .right-border {
+    border-right: 1px solid #001932; }
+  .quotation .header {
+    background-color: #003A61;
+    color: #E2E5E9; }
+    .quotation .header .head-bar {
+      border-bottom: 1px solid #001932;
+      height: 54px; }
+      .quotation .header .head-bar > div {
+        height: 100%;
+        color: #E2E5E9; }
+      .quotation .header .head-bar .nav-arrow {
+        font-size: 41px;
+        width: 54px; }
+      .quotation .header .head-bar .quot-num {
+        font-size: 19px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      .quotation .header .head-bar .calendar {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .quotation .header .head-bar .calendar .calendar-content {
+          margin: 0 auto; }
+        .quotation .header .head-bar .calendar .calendar-icon {
+          font-size: 16px; }
+        .quotation .header .head-bar .calendar .date-1 {
+          font-size: 16px; }
+        .quotation .header .head-bar .calendar .date-2 {
+          font-size: 11px; }
+    .quotation .header .header-input {
+      background-color: #003A61;
+      overflow: auto;
+      padding-top: 5px; }
+      .quotation .header .header-input label {
+        font-size: 9px; }
+      .quotation .header .header-input .q-info {
+        padding-left: 6px;
+        padding-right: 6px; }
+    .quotation .header .header-check {
+      width: 100px;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 8px; }
+      .quotation .header .header-check .job-text {
+        text-align: center;
+        font-size: 9px; }
+  .quotation .menu {
+    background-color: #FFFFFF;
+    color: #001932;
+    overflow: auto; }
+    .quotation .menu .menu-bar {
+      height: 25px; }
+      .quotation .menu .menu-bar ul {
+        margin-top: 0;
+        list-style: none;
+        padding-left: 10px; }
+        .quotation .menu .menu-bar ul li {
+          float: left;
+          position: relative;
+          display: block;
+          line-height: 24px; }
+          .quotation .menu .menu-bar ul li a {
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 20px; }
+          .quotation .menu .menu-bar ul li:last-child {
+            border-right: none; }
+  .quotation .content {
+    overflow: auto; }
+    .quotation .content .side-blocks {
+      overflow: auto; }
+      .quotation .content .side-blocks .side-block {
+        border: 1px solid #AFAFAF;
+        height: 50px;
+        padding: 2px; }
+        .quotation .content .side-blocks .side-block .block-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+    .quotation .content .category {
+      overflow: auto; }
+      .quotation .content .category .cat-blocks {
+        margin-bottom: 3px;
+        overflow: auto; }
+        .quotation .content .category .cat-blocks .cat-block {
+          border: 1px solid #CFCFCF;
+          background-color: #FFFFFF;
+          padding-left: 5px;
+          padding-right: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+  .quotation .footer {
+    background-color: #003A61;
+    color: #E2E5E9;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    height: 50px; }
+    .quotation .footer .nav-next {
+      height: 50px; }
+      .quotation .footer .nav-next > div {
+        padding-left: 0;
+        padding-right: 0; }
+    .quotation .footer .text-next {
+      font-size: 10px; }
+    .quotation .footer .text-siding {
+      font-size: 20px; }
+    .quotation .footer .nav-arrow {
+      font-size: 41px;
+      width: 54px; }
+
+/*# sourceMappingURL=layout.css.map */

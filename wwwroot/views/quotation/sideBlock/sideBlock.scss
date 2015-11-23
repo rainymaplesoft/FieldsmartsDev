@@ -1,0 +1,22 @@
+.side-blocks {
+  overflow: auto;
+  .side-block {
+    border:1px solid #AFAFAF;
+    height:50px;
+    background-color: #F0F0F0;
+    padding:2px;
+    .block-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .color_active{
+    background-color: #F47121;
+    color:white;
+  }
+  .color_inactive{
+    background-color: #FFFFFF;
+    color:#001932;
+  }
+}

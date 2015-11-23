@@ -1,0 +1,57 @@
+﻿$gray-bg: #f3f3f3;
+$font-color: #d1d1d1;
+$menu-background-color: #242424;
+$menu-active-background-color: #0d502a;
+$title-bar-height: 6vh;
+$view-height: 94vh;
+$body-background-color: #E7E9EC;
+$menu-bar-height: 30px;
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+input:active, a:active,
+input:focus, a:focus {
+    outline: none;
+    -moz-outline-style: none;
+    outline-style: none;
+}
+
+/*div.fancy-in {
+  background: url('../../images/bg-Aero-Abstract-Blue1_1200h.jpg') no-repeat center fixed;
+}*/
+
+body.container-fluid {
+  padding: 0;
+  background-color: $body-background-color;
+}
+
+.layout-in {
+  min-height: 80vh;
+
+  .main-view {
+    padding: 0;
+  }
+  background-color: $body-background-color;
+
+  .layout-body {
+    /*position: fixed;
+    top: 110px;
+    left: 0;*/
+    margin-top: 110px;
+    width: 100%;
+    .layout-body-content {
+      /*min-height: 100vh;*/
+      min-width: 960px;
+      max-width: 1200px;
+      margin: 0 auto 10px;
+      padding: 0 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+
+  }
+
+}
+

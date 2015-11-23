@@ -1,0 +1,35 @@
+﻿[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
+input:active, a:active,
+input:focus, a:focus {
+  outline: none;
+  -moz-outline-style: none;
+  outline-style: none; }
+
+/*div.fancy-in {
+  background: url('../../images/bg-Aero-Abstract-Blue1_1200h.jpg') no-repeat center fixed;
+}*/
+body.container-fluid {
+  padding: 0;
+  background-color: #E7E9EC; }
+
+.layout-in {
+  min-height: 80vh;
+  background-color: #E7E9EC; }
+  .layout-in .main-view {
+    padding: 0; }
+  .layout-in .layout-body {
+    /*position: fixed;
+    top: 110px;
+    left: 0;*/
+    margin-top: 110px;
+    width: 100%; }
+    .layout-in .layout-body .layout-body-content {
+      /*min-height: 100vh;*/
+      min-width: 960px;
+      max-width: 1200px;
+      margin: 0 auto 10px;
+      padding: 0 10px; }
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAiLi4vYXBwcm9vdC92aWV3cy9fbGF5b3V0L2xheW91dC5jc3MiLAoJInNvdXJjZXMiOiBbCgkJIi4uL2FwcHJvb3Qvdmlld3MvX2xheW91dC9sYXlvdXQuc2NzcyIKCV0sCgkibWFwcGluZ3MiOiAiQ0FTQSxBQUFBLFNBQUMsQUFBQSxJQUFZLEFBQUEsUUFBQyxBQUFBLElBQVcsQUFBQSxhQUFDLEFBQUEsSUFBZ0IsQUFBQSxVQUFDLEFBQUEsR0FBYSxTQUFTLEVBQUUsV0FBVyxDQUFDO0VBQzdFLE9BQU8sRUFBRSxlQUFnQixHQUMxQjs7QUFFRCxLQUFLLEFBQUEsT0FBTyxFQUFFLENBQUMsQUFBQSxPQUFPO0FBQ3RCLEtBQUssQUFBQSxNQUFNLEVBQUUsQ0FBQyxBQUFBLE1BQU0sQ0FBQztFQUNqQixPQUFPLEVBQUUsSUFBSztFQUNkLGtCQUFrQixFQUFFLElBQUs7RUFDekIsYUFBYSxFQUFFLElBQUssR0FDdkI7O0FBRUQ7O0dBRUc7QUFFSCxJQUFJLEFBQUEsZ0JBQWdCLENBQUM7RUFDbkIsT0FBTyxFQUFFLENBQUU7RUFDWCxnQkFBZ0IsRUFwQk0sT0FBTyxHQXFCOUI7O0FBRUQsVUFBVSxDQUFDO0VBQ1QsVUFBVSxFQUFFLElBQUs7RUFLakIsZ0JBQWdCLEVBN0JNLE9BQU8sR0FpRDlCO0VBMUJELFVBQVUsQ0FHUixVQUFVLENBQUM7SUFDVCxPQUFPLEVBQUUsQ0FBRSxHQUNaO0VBTEgsVUFBVSxDQVFSLFlBQVksQ0FBQztJQUNYOztjQUVVO0lBQ1YsVUFBVSxFQUFFLEtBQU07SUFDbEIsS0FBSyxFQUFFLElBQUssR0FRYjtJQXJCSCxVQUFVLENBUVIsWUFBWSxDQU1WLG9CQUFvQixDQUFDO01BQ25CLHNCQUFzQjtNQUN0QixTQUFTLEVBQUUsS0FBTTtNQUNqQixTQUFTLEVBQUUsTUFBTztNQUNsQixNQUFNLEVBQUUsV0FBWTtNQUNwQixPQUFPLEVBQUUsTUFBTyxHQUNqQiIsCgkibmFtZXMiOiBbXQp9 */
