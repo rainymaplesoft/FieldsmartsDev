@@ -1,3 +1,4 @@
+/// <reference path="../../typings/tsd.d.ts" />
 module App {
     var module = angular.module('Fieldsmarts', [
         'ui.router'

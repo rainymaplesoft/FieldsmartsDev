@@ -7,15 +7,14 @@
     "target": "es5"
   },
   "files": [
-    "wwwroot/**/*.ts",
-
-    "wwwroot/components/rainCheckbox/asas.ts"
+    "wwwroot/app/app.ts"
+  ],
+  "filesGlob": [
+    "./wwwroot/**/*.ts",
+    "!node_modules/**/*.ts"
   ],
   "exclude": [
     "node_modules",
-    "approot",
-    "./typings",
-    "approot/bower_components",
-    "wwwroot/typings"
+    "typings"
   ]
 }

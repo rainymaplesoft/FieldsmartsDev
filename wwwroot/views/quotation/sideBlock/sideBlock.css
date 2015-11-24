@@ -1,24 +1,31 @@
 .side-block {
+  cursor: pointer;
   border: 1px solid #AFAFAF;
   height: 50px;
-  background-color: #F0F0F0;
-  padding: 2px;
+  /*background-color: #F0F0F0;*/
+  /*background: #F0F0F0 none repeat scroll 0 0;
+  box-shadow: 0 0 1px 1px #AAAAAA inset;*/
+  padding: 0px;
   font-family: 'verdana', verdana, arial, serif;
   font-style: italic; }
   .side-block .block-content {
+    background: #F0F0F0 none repeat scroll 0 0;
+    box-shadow: 0 0 2px 2px #DADADA inset;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    height: 48px; }
 
 .side-block.active {
-  border-color: #9E4218;
+  border-color: #A34112;
   background-color: #F47121; }
   .side-block.active .block-content {
     background-color: #F47121;
+    box-shadow: 0 0 1px 1px #A04B25 inset;
     color: white; }
 
 .side-block.inactive {
-  border-color: #AFAFAF;
+  /*border-color: #AFAFAF;*/
   background-color: #F0F0F0; }
   .side-block.inactive .block-content {
     background-color: #FFFFFF;

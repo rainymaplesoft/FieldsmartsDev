@@ -49,6 +49,7 @@ var App;
                 this.errorMessage = '';
             };
             ;
+            // mock data
             QuotationController.prototype.getSides = function () {
                 return [
                     { id: '1', label: 'Front', iconClass: 'fa fa-diamond', isSelected: false },
@@ -58,6 +59,7 @@ var App;
                 ];
             };
             ;
+            // mock data
             QuotationController.prototype.getCategories = function () {
                 return [
                     { id: '1', label: 'Siding', iconClass: 'fa fa-diamond', isSelected: true },
@@ -70,7 +72,7 @@ var App;
                     { id: '3', label: 'Doors', iconClass: 'fa fa-diamond', isSelected: false },
                     { id: '4', label: 'Garage Doors', iconClass: 'fa fa-diamond', isSelected: false },
                     { id: '5', label: 'Windows', iconClass: 'fa fa-diamond', isSelected: false },
-                    { id: '6', label: 'Shuuters', iconClass: 'fa fa-diamond', isSelected: false },
+                    { id: '6', label: 'Shutters', iconClass: 'fa fa-diamond', isSelected: false },
                     { id: '7', label: 'Columns', iconClass: 'fa fa-diamond', isSelected: false },
                     { id: '8', label: 'Ralilings', iconClass: 'fa fa-diamond', isSelected: false },
                     { id: '9', label: 'Vents', iconClass: 'fa fa-diamond', isSelected: false }

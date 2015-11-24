@@ -15,7 +15,7 @@ html {
 
 body.container-fluid {
   padding: 0;
-  background-color: #F2F2F2; }
+  background-color: #E9E9E9; }
 
 /* general */
 .blue-icon {
@@ -37,7 +37,7 @@ body.container-fluid {
 /* layout */
 .layout {
   min-height: 100vh;
-  background-color: #F2F2F2; }
+  background-color: #E9E9E9; }
   .layout .layout-panel {
     padding: 0 !important;
     height: 100vh; }
@@ -108,7 +108,8 @@ body.container-fluid {
   .quotation .menu {
     background-color: #FFFFFF;
     color: #001932;
-    overflow: auto; }
+    overflow: auto;
+    box-shadow: 0 5px 3px -1px #CBCBCA; }
     .quotation .menu .menu-bar {
       height: 25px; }
       .quotation .menu .menu-bar ul {
@@ -130,14 +131,6 @@ body.container-fluid {
     overflow: auto; }
     .quotation .content .side-blocks {
       overflow: auto; }
-      .quotation .content .side-blocks .side-block {
-        border: 1px solid #AFAFAF;
-        height: 50px;
-        padding: 2px; }
-        .quotation .content .side-blocks .side-block .block-content {
-          display: flex;
-          flex-direction: column;
-          justify-content: center; }
     .quotation .content .category {
       overflow: auto; }
       .quotation .content .category .cat-blocks {
@@ -164,7 +157,8 @@ body.container-fluid {
         padding-left: 0;
         padding-right: 0; }
     .quotation .footer .text-next {
-      font-size: 10px; }
+      font-size: 10px;
+      text-align: right; }
     .quotation .footer .text-siding {
       font-size: 20px; }
     .quotation .footer .nav-arrow {

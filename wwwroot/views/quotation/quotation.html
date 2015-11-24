@@ -67,7 +67,7 @@
     </div>
     <div class="content section">
         <div class="sides" style="padding-top:20px;">
-            <div style="margin: 0 auto;width:110px;font-size: 9px;">SIDE OF THE BUILDING</div>
+            <div style="margin: 0 auto;width:110px;font-size: 9px;font-weight: bold;text-align: center;"><span>SIDE OF THE BUILDING</span></div>
 
             <div style="padding: 10px;" class="side-blocks" ng-repeat="row in vm.getIndexArray(vm.sides)">
                 <div class="col-xs-3" ng-repeat="side in vm.sides.slice((row-1)*4,(row-1)*4+4)">
@@ -85,80 +85,24 @@
                          icon-class="{{cat.iconClass}}"></div>
                 </div>
             </div>
-<!--
-            <div style="padding: 10px;" class="cat-blocks">
-                <div class="col-xs-3">
-                    <div class=" cat-block" style="height: 100px;">
-                        <div style="width:60px;margin:0 auto;">
-                            <div style="text-align: center; font-size: 26px; color:#F47121;">
-                                <i class="fa fa-building-o"></i>
-                            </div>
-                            <div style="text-align: center; font-size: 14px;">Siding</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class=" cat-block" style="height: 100px;">
 
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class=" cat-block" style="height: 100px;">
-
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class=" cat-block" style="height: 100px;">
-
-                    </div>
-                </div>
-
-            </div>
-            <div style="padding: 10px;" class="cat-blocks">
-                <div class="col-xs-3">
-                    <div class=" cat-block" style="height: 100px;">
-
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class=" cat-block" style="height: 100px;">
-
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class=" cat-block" style="height: 100px;">
-
-                    </div>
-                </div>
-                <div class="col-xs-3">
-                    <div class=" cat-block" style="height: 100px;">
-
-                    </div>
-                </div>
-
-            </div>
-            <div style="padding: 10px;" class="cat-blocks">
-                <div class="col-xs-3">
-                    <div class=" cat-block" style="height: 100px;">
-
-                    </div>
-                </div>
-
-            </div>-->
         </div>
     </div>
     <div class="footer section">
-        <div class="col-xs-8"></div>
-        <div class="col-xs-4 nav-next">
-            <div class="col-xs-6 ">
-                <div style="display: inline-block;" class="text-next">NEXT</div>
-                <div style="display: inline-block;" class="text-siding">Siding</div>
-            </div>
-            <div class="col-xs-6">
-                <div class="nav-arrow">
-                    <i class="icon ion-ios-arrow-thin-right"></i>
+
+        <div class="pull-right">
+            <div style="display: inline-block">
+                <div style="display: inline-block">
+                    <div class="text-next">NEXT</div>
+                    <div class="text-siding">Siding</div>
+                </div>
+                <div style="display: inline-block;margin-left: 10px;margin-right: 10px;">
+                    <div class="nav-arrow">
+                        <i class="icon ion-ios-arrow-thin-right"></i>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>

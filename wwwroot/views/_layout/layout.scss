@@ -4,7 +4,7 @@ $menu-background-color: #242424;
 $menu-active-background-color: #0d502a;
 $title-bar-height: 6vh;
 $view-height: 94vh;
-$body-background-color: #F2F2F2;
+$body-background-color: #E9E9E9;
 $menu-bar-height: 25px;
 $orange: #F47121;
 
@@ -157,6 +157,7 @@ body.container-fluid {
     background-color: #FFFFFF;
     color: #001932;
     overflow: auto;
+    box-shadow: 0 5px 3px -1px #CBCBCA;
     .menu-bar {
       height: $menu-bar-height;
       ul {
@@ -184,16 +185,6 @@ body.container-fluid {
     overflow: auto;
     .side-blocks {
       overflow: auto;
-      .side-block {
-        border:1px solid #AFAFAF;
-        height:50px;
-        padding:2px;
-        .block-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        }
-      }
     }
     .category {
       overflow: auto;
@@ -228,6 +219,7 @@ body.container-fluid {
     }
     .text-next {
       font-size: 10px;
+      text-align: right;
     }
     .text-siding {
       font-size: 20px;

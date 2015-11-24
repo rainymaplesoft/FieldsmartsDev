@@ -70,6 +70,7 @@ module App.View {
             this.errorMessage = '';
         };
 
+        // mock data
         getSides():Array<IBlock> {
             return [
                 {id: '1', label: 'Front', iconClass: 'fa fa-diamond', isSelected: false},
@@ -79,6 +80,7 @@ module App.View {
             ];
         };
 
+        // mock data
         getCategories():Array<IBlock> {
             return [
                 {id: '1', label: 'Siding', iconClass: 'fa fa-diamond', isSelected: true},
@@ -91,7 +93,7 @@ module App.View {
                 {id: '3', label: 'Doors', iconClass: 'fa fa-diamond', isSelected: false},
                 {id: '4', label: 'Garage Doors', iconClass: 'fa fa-diamond', isSelected: false},
                 {id: '5', label: 'Windows', iconClass: 'fa fa-diamond', isSelected: false},
-                {id: '6', label: 'Shuuters', iconClass: 'fa fa-diamond', isSelected: false},
+                {id: '6', label: 'Shutters', iconClass: 'fa fa-diamond', isSelected: false},
                 {id: '7', label: 'Columns', iconClass: 'fa fa-diamond', isSelected: false},
                 {id: '8', label: 'Ralilings', iconClass: 'fa fa-diamond', isSelected: false},
                 {id: '9', label: 'Vents', iconClass: 'fa fa-diamond', isSelected: false}
