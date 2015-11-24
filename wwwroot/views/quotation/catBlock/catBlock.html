@@ -1,0 +1,11 @@
+<div class="cat-block" ng-click="vm.onClick()"
+     ng-class="{active: vm.catBlock,inactive:!vm.catBlock,withIcon:vm.iconClass,withoutIcon:!vm.iconClass}">
+    <div class="block-content" style="height:100px;">
+        <div style="width:100%;margin:0 auto;">
+            <div style="text-align: center; font-size: 20px;" class="block-icon">
+                <i class="{{vm.iconClass}}"></i>
+            </div>
+            <div class="block-label" style="text-align: center;">{{vm.label}}</div>
+        </div>
+    </div>
+</div>

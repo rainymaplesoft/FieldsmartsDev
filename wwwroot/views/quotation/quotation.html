@@ -68,40 +68,24 @@
     <div class="content section">
         <div class="sides" style="padding-top:20px;">
             <div style="margin: 0 auto;width:110px;font-size: 9px;">SIDE OF THE BUILDING</div>
-            <div style="padding: 10px;" class="side-blocks">
-                <div class="col-xs-3">
-                    <div class="side-block" style="background-color: #F47121;color:white;">
-                        <div style="width:60px;margin:0 auto;">
-                            <div style="text-align: center; font-size: 18px;"><i class="fa fa-diamond"></i></div>
-                            <div style="text-align: center; font-size: 10px;">Front</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-3 ">
-                    <div side-block="true" id="left" icon-class="fa fa-diamond" label="Left"></div>
-              <!--      <div class="side-block">
-                        <div class="block-content" style="height:45px;color:#001932;">
-                            <div style="width:100%;margin:0 auto;">
-                                <div style="text-align: center; font-size: 14px;">Left</div>
-                            </div>
-                        </div>
-                    </div>-->
-                </div>
-                <div class="col-xs-3">
-                    <div side-block="false" id="right" icon-class="fa fa-diamond" label="Right"></div>
-                </div>
-                <div class="col-xs-3">
-                    <div class="side-block" style="height: 50px;color:#001932;">
-                        <div style="width:60px;margin:0 auto;">
-                            <div style="text-align: center; font-size: 14px;">Rear</div>
-                        </div>
-                    </div>
+
+            <div style="padding: 10px;" class="side-blocks" ng-repeat="row in vm.getIndexArray(vm.sides)">
+                <div class="col-xs-3" ng-repeat="side in vm.sides.slice((row-1)*4,(row-1)*4+4)">
+                    <div side-block=side.isSelected id="{{side.id}}" label="{{side.label}}"
+                         icon-class="{{side.iconClass}}"></div>
                 </div>
             </div>
         </div>
         <div class="category" style="padding-top:8px;">
             <div style="margin: 0 auto;width:110px;font-size: 9px;">SELECT A CATEGORY</div>
 
+            <div style="padding: 10px;" class="cat-blocks" ng-repeat="row in vm.getIndexArray(vm.categories)">
+                <div class="col-xs-3" ng-repeat="cat in vm.categories.slice((row-1)*4,(row-1)*4+4)">
+                    <div cat-block=cat.isSelected id="{{cat.id}}" label="{{cat.label}}"
+                         icon-class="{{cat.iconClass}}"></div>
+                </div>
+            </div>
+<!--
             <div style="padding: 10px;" class="cat-blocks">
                 <div class="col-xs-3">
                     <div class=" cat-block" style="height: 100px;">
@@ -160,7 +144,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div>-->
         </div>
     </div>
     <div class="footer section">

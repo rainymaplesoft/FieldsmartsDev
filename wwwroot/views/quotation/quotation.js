@@ -1,5 +1,5 @@
 /// <reference path="../../../typings/tsd.d.ts" />
-// / <reference path="../../app/repositoryservice.ts" />
+/// <reference path="../../app/repositoryService.ts" />
 /// <reference path="../../app/app.ts" />
 var App;
 (function (App) {
@@ -21,7 +21,6 @@ var App;
             return new Quotation();
         }
         angular.module('Fieldsmarts').directive('quotation', factory);
-        /** --  Controller -- **/
         var QuotationController = (function () {
             function QuotationController(repository, appConfig) {
                 this.repository = repository;
@@ -29,6 +28,8 @@ var App;
                 var url = appConfig.getApiUrl('quotation');
                 this.quotationRequest = { url: url };
                 this.marketingJob = true;
+                this.sides = this.getSides();
+                this.categories = this.getCategories();
             }
             QuotationController.prototype.getQuotation = function () {
                 var _this = this;
@@ -46,6 +47,43 @@ var App;
             QuotationController.prototype.reset = function () {
                 this.responseData = '';
                 this.errorMessage = '';
+            };
+            ;
+            QuotationController.prototype.getSides = function () {
+                return [
+                    { id: '1', label: 'Front', iconClass: 'fa fa-diamond', isSelected: false },
+                    { id: '2', label: 'Left', isSelected: true },
+                    { id: '3', label: 'Right', isSelected: false },
+                    { id: '4', label: 'Rear', isSelected: false }
+                ];
+            };
+            ;
+            QuotationController.prototype.getCategories = function () {
+                return [
+                    { id: '1', label: 'Siding', iconClass: 'fa fa-diamond', isSelected: true },
+                    {
+                        id: '2',
+                        label: 'Soffit/Fascia Gutters/Down Spout and Carpot',
+                        iconClass: 'fa fa-diamond',
+                        isSelected: false
+                    },
+                    { id: '3', label: 'Doors', iconClass: 'fa fa-diamond', isSelected: false },
+                    { id: '4', label: 'Garage Doors', iconClass: 'fa fa-diamond', isSelected: false },
+                    { id: '5', label: 'Windows', iconClass: 'fa fa-diamond', isSelected: false },
+                    { id: '6', label: 'Shuuters', iconClass: 'fa fa-diamond', isSelected: false },
+                    { id: '7', label: 'Columns', iconClass: 'fa fa-diamond', isSelected: false },
+                    { id: '8', label: 'Ralilings', iconClass: 'fa fa-diamond', isSelected: false },
+                    { id: '9', label: 'Vents', iconClass: 'fa fa-diamond', isSelected: false }
+                ];
+            };
+            ;
+            QuotationController.prototype.getIndexArray = function (arr) {
+                var rowCount = Math.ceil(arr.length / 4);
+                var indexArray = [];
+                for (var i = 0; i < rowCount; i++) {
+                    indexArray.push(i + 1);
+                }
+                return indexArray;
             };
             QuotationController.$inject = ['app.repository', 'app.config'];
             return QuotationController;

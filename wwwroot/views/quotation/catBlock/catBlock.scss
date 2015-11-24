@@ -1,6 +1,6 @@
-.side-block {
+.cat-block {
   border: 1px solid #AFAFAF;
-  height: 50px;
+  height: 100px;
   background-color: #F0F0F0;
   padding: 2px;
   font-family: 'verdana', verdana, arial, serif;
@@ -12,7 +12,7 @@
   }
 }
 
-.side-block.active {
+.cat-block.active {
   border-color: #9E4218;
   background-color: #F47121;
   .block-content {
@@ -21,7 +21,7 @@
   }
 }
 
-.side-block.inactive {
+.cat-block.inactive {
   border-color: #AFAFAF;
   background-color: #F0F0F0;
   .block-content {
@@ -30,12 +30,12 @@
   }
 }
 
-.side-block.withIcon{
+.cat-block.withIcon{
   .block-label{
     font-size:10px;
   }
 }
-.side-block.withoutIcon{
+.cat-block.withoutIcon{
   .block-label{
     font-size:12px;
   }
